@@ -2991,18 +2991,47 @@ body {
 .ffs-fr p.vote-abstain::before {
   background-image: url(/img/error.svg)
 }
+.ffs-fr hr {
+  margin: 2.5rem -2.5rem 1rem;
+  border: 0;
+  border-top: 2px solid var(--bg)
+}
 .voting-instructions {
-  margin: 0 -1rem;
   text-align: left
 }
+@media only screen and (min-width:593px) {
+  .voting-instructions {
+    text-align: center
+  }
+}
 .voting-instructions .vote-option {
-  margin-top: 1.5rem
+  margin: 1.5rem 0;
+  width: 100%
 }
 .voting-instructions .vote-option .ico {
   margin-right: .2rem
 }
 .voting-instructions .vote-option strong {
   color: var(--text)
+}
+.voting-instructions .or-wrap {
+  text-align: center;
+  margin-top: 1.5rem 0;
+  width: 100%
+}
+@media only screen and (min-width:992px) {
+  .voting-instructions .or-wrap {
+    margin-top: 3.4rem
+  }
+}
+.voting-instructions .or-wrap .or {
+  display: inline-block;
+  font-size: .75rem;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+  border: 1px solid var(--bg-muted);
+  border-radius: 50%
 }
 .voting-instructions pre {
   word-wrap: break-word;
